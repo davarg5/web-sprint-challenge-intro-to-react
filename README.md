@@ -30,11 +30,19 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 
 1. What is React JS and what problems does it solve? Support your answer with concepts introduced in class and from your personal research on the web.
 
+React JS is an efficent and flexible Javascript library for building user interfaces. React allows us to compose complex UI's through the use of components. React solves the problem direct and slow DOM surgery when it comes to rich UI's that interact with ever-changing data. When it comes to busy UI's, the DOM has to do handle a lot of data, such as animations and events. To combat this, the React team built an engine known as the virtual DOM, in which  we can tell this virtual DOM which elements and state to render to the DOM.
+
 1. Describe component state.
+
+Components are the building blocks of React and are re-usable blocks of code(class or function) that can take in properties and return a React element that can be rendered to the DOM. The state is an instance of a component that can be defined as an object of a set of observable properties that control the behavior of the component. Component states are declared by the useState hook, which initialize a pair of values, one to be altered and the other that alters the first value.
 
 1. Describe props.
 
+Props, short for properties, are used for passing data from one component to another. Props are never altered(read-only), and this helps ensure that our data remains clean and organized. Data with props are passed in a uni-directional flow.
+
 1. What are side effects, and how do you sync effects in a React component to changes of certain state or props?
+
+Side effects are anything that affect something outside the scope of the function being executed. Examples of side effects include fetching data from an API, timers, logging, and manipulating the DOM. You can sync effects in a React component to changes of certain state or props by passing a dependency array as the second argument to the effect hook.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade.
 
