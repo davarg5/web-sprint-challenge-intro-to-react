@@ -26,16 +26,20 @@ const App = () => {
 
   const AppScreen = styled.div`
     background-image: url('https://t4.ftcdn.net/jpg/02/22/57/71/360_F_222577191_ZqmuXPFqoc98ekpJlsCcI9MdLpOm49JU.jpg');
+    text-align: center;
+    padding-top: 7.5%;
+    padding-bottom: 5%;
   `
 
   return (
-    <div className="App">
-      <h1 className="Header">Characters</h1>
+    <AppScreen>
+      <h1 className="Header">React Wars</h1>
       {characters.map( obj => {
         return <Character gender={obj.gender} hair_color={obj.hair_color} height={obj.height} mass={obj.mass} name={obj.name} skin_color={obj.skin_color}/>
       })}
-    </div>
+    </AppScreen>
   );
 }
 
 export default App;
+
